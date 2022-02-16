@@ -1,15 +1,0 @@
-Font: Blogger Sans  Style: Regular
-Point Size: 51   SP/PD Ratio: 9,8%
-
-Characters included: 164/166
-Missing characters: 2
-Excluded characters: 0
-
-Characters missing from font file:
-----------------------------------------
-ID: 13	Hex: D	Char []
-ID: 10	Hex: A	Char [
-]
-
-Characters excluded from packing:
-----------------------------------------
