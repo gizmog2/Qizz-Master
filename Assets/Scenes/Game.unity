@@ -291,6 +291,11 @@ MonoBehaviour:
   m_ChildScaleWidth: 0
   m_ChildScaleHeight: 0
   m_ReverseArrangement: 0
+--- !u!1 &120128102 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5602286879554049525, guid: 2b71abb2523782c45ac33932136b7787, type: 3}
+  m_PrefabInstance: {fileID: 882106189}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &271740450
 GameObject:
   m_ObjectHideFlags: 0
@@ -392,6 +397,11 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!1 &367238035 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5602286879554049525, guid: 2b71abb2523782c45ac33932136b7787, type: 3}
+  m_PrefabInstance: {fileID: 795420335}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -1305,6 +1315,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   questionText: {fileID: 1462736529}
   question: {fileID: 11400000, guid: 356269a955970f64bafb6ec6bca29b7f, type: 2}
+  answerButtons:
+  - {fileID: 1738792831}
+  - {fileID: 1922375435}
+  - {fileID: 120128102}
+  - {fileID: 367238035}
 --- !u!1001 &1473693467
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1482,3 +1497,13 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1650640057}
   m_CullTransparentMesh: 1
+--- !u!1 &1738792831 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5602286879554049525, guid: 2b71abb2523782c45ac33932136b7787, type: 3}
+  m_PrefabInstance: {fileID: 1473693467}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1922375435 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5602286879554049525, guid: 2b71abb2523782c45ac33932136b7787, type: 3}
+  m_PrefabInstance: {fileID: 20040345}
+  m_PrefabAsset: {fileID: 0}
