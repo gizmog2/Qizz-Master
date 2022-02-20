@@ -463,10 +463,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ecfef10c4556e07479dab9fcacf4e4a1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timeToCompleteQuestion: 30
-  timeToShowCorrectAnswer: 10
+  timeToCompleteQuestion: 10
+  timeToShowCorrectAnswer: 5
   loadNextQuestion: 0
   fillFraction: 0
+  isAnsweringQuestion: 0
 --- !u!4 &375075922
 Transform:
   m_ObjectHideFlags: 0
@@ -475,7 +476,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 375075920}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1367.7401, y: 789.44543, z: -248.10449}
+  m_LocalPosition: {x: 1370, y: 789.44543, z: -248.10449}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -1331,6 +1332,7 @@ MonoBehaviour:
   - {fileID: 367238035}
   defaultAnswerSprite: {fileID: 21300000, guid: 7f6a0135a94c9d043aca6155f74e127d, type: 3}
   correctAnswerSprite: {fileID: 21300000, guid: a0cae9c5e26e02141a7d06e837d78cd2, type: 3}
+  timerImage: {fileID: 2049345221}
 --- !u!1 &1462736527
 GameObject:
   m_ObjectHideFlags: 0
