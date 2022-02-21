@@ -5,7 +5,7 @@ using UnityEngine;
 public class ScoreKeeper : MonoBehaviour
 {
     int correctAnswers = 0;
-    int questionsSeen = 1;
+    int questionsSeen = 0;
    
     public int GetCorrectAnswers()
     {

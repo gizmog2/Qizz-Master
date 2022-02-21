@@ -30,11 +30,18 @@ public class Quiz : MonoBehaviour
     [SerializeField] TextMeshProUGUI scoreText;
     ScoreKeeper scoreKeeper;
 
+    [Header("ProgressBar")]
+    [SerializeField] Slider progressBar;
+
+    public bool isComplete;
+
     // Start is called before the first frame update
     void Start()
     {
         scoreKeeper = FindObjectOfType<ScoreKeeper>();
         timer = FindObjectOfType<Timer>();
+        progressBar.maxValue = questions.Count;
+        progressBar.value = 0;
         //GetNextQuestion();
         //DisplayQuestion();   
     }
@@ -61,6 +68,11 @@ public class Quiz : MonoBehaviour
         SetButtonState(false);
         timer.CancelTimer();
         scoreText.text = "Score: " + scoreKeeper.CalculateScore() + "%";
+
+        if (progressBar.value == progressBar.maxValue)
+        {
+            isComplete = true;
+        }
     }
 
     void DisplayAnswer(int index)
@@ -82,7 +94,7 @@ public class Quiz : MonoBehaviour
             questionText.text = "Неправильно, а правильный ответ:\n " + correctAnswer;
             buttonImage = answerButtons[correctAnswerIndex].GetComponent<Image>();
             buttonImage.sprite = correctAnswerSprite;
-            scoreKeeper.IncrementQuestionsSeem();
+            
         }
     }
 
@@ -94,6 +106,8 @@ public class Quiz : MonoBehaviour
             SetDefaultButtonSprite();
             GetRandomQuestion();
             DisplayQuestion();
+            progressBar.value++;
+            scoreKeeper.IncrementQuestionsSeem();
         }
         
     }
