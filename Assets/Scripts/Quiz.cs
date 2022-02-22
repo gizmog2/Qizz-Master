@@ -51,6 +51,11 @@ public class Quiz : MonoBehaviour
         timerImage.fillAmount = timer.fillFraction;
         if (timer.loadNextQuestion)
         {
+            if (progressBar.value == progressBar.maxValue)
+            {
+                isComplete = true;
+                return;
+            }
             hasAnsweredEarly = false;
             GetNextQuestion();
             timer.loadNextQuestion = false;
@@ -69,10 +74,7 @@ public class Quiz : MonoBehaviour
         timer.CancelTimer();
         scoreText.text = "Score: " + scoreKeeper.CalculateScore() + "%";
 
-        if (progressBar.value == progressBar.maxValue)
-        {
-            isComplete = true;
-        }
+        
     }
 
     void DisplayAnswer(int index)
